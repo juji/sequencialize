@@ -1,7 +1,7 @@
 
 # sequencialize
 
-Make async functions runs in sequence
+Run async functions in sequence. Queue async functions.
 
 How to make parallel-running async function run sequencially?
 This resolve a problem when something like `findAndUpdate` creates two entries when run almost parallel.
