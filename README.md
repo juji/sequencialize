@@ -77,16 +77,35 @@ for(let i = n;i;i--){
 ```
 
 ## Use Case
+
+instead of this:
+```js
+// potentially racing
+const handleRequest = () => {
+
+  db.longCalculationAndUpsert({
+    where: { user_id },
+    data
+  })
+  
+}
 ```
 
-// running almost in parallel
-db.upsert({
-  where: { user_id },
-  data
-})
+write this:
+```js
 
+// run in sequence for every user_id
+const handleRequest = () => {
+
+  sequencer.run(() => {
+    return db.longCalculationAndUpsert({
+      where: { user_id },
+      data
+    }
+  }), user_id)
+
+}
 ```
-
 
 Cheers,
 [juji](https://jujiyangasli.com)
