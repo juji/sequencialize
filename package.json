@@ -1,6 +1,6 @@
 {
   "name": "sequencialize",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "license": "MIT",
   "description": "Run async functions in sequence. Queue async functions.",
