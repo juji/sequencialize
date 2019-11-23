@@ -53,7 +53,7 @@ for(let i = n;i;i--){
 
 ```
 
-you can use namespace. each namespace is it's own sequence:
+you can use namespace. Each namespace is it's own sequence:
 ```js
 
 const wait = t => new Promise(r => setTimeout(r,t))
