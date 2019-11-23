@@ -103,7 +103,7 @@ const handleRequest = () => {
     return db.longCalculationAndUpsert({
       where: { user_id },
       data
-    }
+    })
   }), user_id)
 
 }
