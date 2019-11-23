@@ -1,0 +1,9 @@
+{
+  "name": "sequencialize",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "make async functions runs in sequence",
+  "repository": "git@github.com:juji/sequencialize.git",
+  "author": "Juji <jujiyangasli@gmail.com>"
+}
