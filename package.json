@@ -1,9 +1,17 @@
 {
   "name": "sequencialize",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "license": "MIT",
-  "description": "make async functions runs in sequence",
+  "description": "Run async functions in sequence. Queue async functions.",
   "repository": "git@github.com:juji/sequencialize.git",
-  "author": "Juji <jujiyangasli@gmail.com>"
+  "author": "Juji <jujiyangasli@gmail.com>",
+  "keywords": [
+    "async queue",
+    "promise queue",
+    "async sequence",
+    "promise sequence",
+    "async",
+    "promise"
+  ]
 }
