@@ -23,7 +23,9 @@ const n = 3
 const func = async n => n
 
 for(let i = n;i;i--){
-  sequencer.run(() => func(i)).then(v => console.log(v))
+  sequencer
+    .run(() => func(i))
+    .then(v => console.log(v))
 }
 
 // 3
@@ -87,7 +89,7 @@ const handleRequest = () => {
     where: { user_id },
     data
   })
-  
+
 }
 ```
 
