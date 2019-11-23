@@ -4,8 +4,9 @@
 Run async functions in sequence. Queue async functions.
 
 How to make parallel-running async function run sequencially?
-This resolve a problem when something like `findAndUpdate` creates two entries when run almost parallel.
-So, just chain them.
+This module tries to resolve the problem when something like `findAndUpdate` creates two entries when run almost parallel.
+
+So, we just chain them.
 
 If you are using message broker to queue potentially-breaking parallel function calls, you won't need this.
 
